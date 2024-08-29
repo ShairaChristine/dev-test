@@ -1,0 +1,88 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+.justify{
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: #04AA6D; /* Green */
+  color: white;
+}
+
+button {
+  background-color: midnightblue;
+  color: white;
+  border: 1px solid #7e7a7a;
+  margin-left: 10px;
+  border-radius: 3px;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.delete{
+  background-color: maroon;
+}
+
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  border: 2px solid hsla(160, 100%, 37%, 1);
+  border-radius: 4px;
+}
+input[type=text]:focus {
+  border: 3px solid #76ddff;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+}
+.comments-btn{
+  min-inline-size: fit-content;
+} 
+.comments-btn > button{
+  opacity: 0.8;
+  padding: 5px 10px;
+  font-size: small;
+  background-color: rgba(255,255,255, 0.9);
+  color: blue;
+}
+.comments-btn .delete{
+  color: maroon;
+}
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
+}
